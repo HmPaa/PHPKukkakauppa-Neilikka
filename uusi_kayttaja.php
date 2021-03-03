@@ -17,7 +17,7 @@ include("kayttajan_lisaaja.php");
             <input type="text" id="kayttajatunnus" name="kayttajatunnus" minlenght=2 required>
             <p><?php echo $fNameEmptyErr; ?>
             <?php echo $f_NameErr; ?></p>
-            <label for="sahkoposti">Sähköposti:</label>
+            <label for="email">Sähköposti:</label>
             <input type="email" id="email" name="email" minlenght=2 required>
             <p><?php echo $_emailErr; ?>
             <?php echo $emailEmptyErr; ?></p>
