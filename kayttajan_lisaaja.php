@@ -2,7 +2,7 @@
    
     // Database connection
     include('start.php');
-    include("maileri.php"); 
+    include('maileri.php'); 
     
     // Error & success messages
     global $success_msg, $email_exist, $f_NameErr, $l_NameErr, $_emailErr, $_mobileErr, $_passwordErr;
@@ -70,7 +70,7 @@
                     // Send verification email
                     if($query) {
                         $msg = 'Vahvista sähköpostiosoitteesi allaolevasta linkistä. <br><br>
-                          <a href="http://localhost:8888/php-user-authentication/user_verificaiton.php?token='.$token.'"> Klikkaa tästä vahvistaaksesi sähköpostiosoitteesi. </a>
+                          <a href="http://localhost/moodle/PHPKukkakauppa%20Neilikka/kayttajan_verifiointi.php?token='.$token.'"> Klikkaa tästä vahvistaaksesi sähköpostiosoitteesi. </a>
                         ';
                         $emailTo=$email;
                         $subject='Kukkatalo Neilikan intranetin uusi käyttäjätunnus';
