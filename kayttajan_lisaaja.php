@@ -1,8 +1,15 @@
 <?php
    
     // Database connection
-    include('start.php');
-    include('maileri.php'); 
+    include_once 'start.php';
+        // Enable us to use Headers
+        ob_start();
+
+        // Set sessions
+        if(!isset($_SESSION)) {
+            session_start();
+        }
+    include_once 'maileri.php'; 
     
     // Error & success messages
     global $success_msg, $email_exist, $f_NameErr, $l_NameErr, $_emailErr, $_mobileErr, $_passwordErr;

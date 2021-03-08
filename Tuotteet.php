@@ -1,7 +1,7 @@
 
 <?php
-include("header.php");
-include("start.php");
+include_once "header.php";
+include_once "start.php";
 $query="SELECT * FROM tuotekategoria";
 $tulos=mysqli_query($yhteys, $query);
 if(!$tulos){
@@ -17,4 +17,4 @@ if(!$tulos){
 }
 ?>
 <?php $yhteys->close();?>
-<?php include("footer.html");?>
+<?php include_once "footer.html";?>

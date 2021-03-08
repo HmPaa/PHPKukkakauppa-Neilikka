@@ -1,6 +1,6 @@
 <?php
-include("header.php");
-include("start.php");
+include_once "header.php";
+include_once "start.php";
 ?>
 <script type="text/javascript">
 function preview() {

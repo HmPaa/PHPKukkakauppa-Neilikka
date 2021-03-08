@@ -1,6 +1,6 @@
 
 <?php
-include("header.php");
+include_once "header.php";
 ?>
     <h2>Tietoa meistä</h2>
     <p>
@@ -13,6 +13,6 @@ include("header.php");
         juuri sinulle sopivimmat tuotteet.
     </p>
 <?php
-include("footer.html");
+include_once "footer.html";
 ?>
 

@@ -1,5 +1,5 @@
 <?php
-include("header.php");
+include_once "header.php";
 ?>
     <h2>Ota yhteyttä</h2>
     <ul class="yleinen">
@@ -27,5 +27,5 @@ include("header.php");
     </form>
 
 <?php
-include("footer.html");
+include_once "footer.html";
 ?>

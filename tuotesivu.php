@@ -1,7 +1,7 @@
 
 <?php
-include("header.php");
-include("start.php");
+include_once "header.php";
+include_once "start.php";
 $kategoria=$_GET["tuotekategoria"];
 ?>
 <h2><?php echo $kategoria;?></h2>    
@@ -49,4 +49,4 @@ echo "</div>";
 </ul>
 </nav>
 <?php $yhteys->close();?>
-<?php include("footer.html");?>
+<?php include_once "footer.html";?>

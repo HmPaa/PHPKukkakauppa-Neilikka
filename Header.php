@@ -30,7 +30,7 @@ $valittu = "class=\"valittu\"";
         <a <?php if ($osoite == "Myymalat") echo $valittu;?> href="Myymalat.php">Myymälät</a>
         <a <?php if ($osoite == "Tietoameista") echo $valittu;?> href="Tietoameista.php">Tietoa meistä</a>
         <a <?php if ($osoite == "yhteystiedot") echo $valittu;?> href="yhteystiedot.php">Ota yhteyttä</a>
-        <a id="tyontekijoille"<?php if ($osoite == "tyontekijoille") echo $valittu;?> href="tyontekijoille.php">Työntekijöille</a>
+        <a id="tyontekijoille"<?php if ($osoite == "tyontekijoille") echo $valittu;?> href="dashboard.php">Työntekijöille</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>

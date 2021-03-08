@@ -1,6 +1,6 @@
 
 <?php
-include("header.php");
+include_once "header.php";
 ?>
     <h2>Myymälät</h2>
 
@@ -26,5 +26,5 @@ include("header.php");
     </p>
 
 <?php
-include("footer.html");
+include_once "footer.html";
 ?>

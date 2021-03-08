@@ -47,7 +47,7 @@ function posti($emailTo, $msg, $subject){
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo "<p>Vahvistusviesti on lähetetty. </p>";
+    echo "<p>Sähköpostin vahvistusviesti on lähetetty osoitteeseen ". $emailTo . ". Vahvistathan sähköpostin ennen ensimmäistä kirjautumista. </p>";
 } catch (Exception $e) {
     echo "<p>Vahvistusviestiä ei voitu lähettää. Mailer Error: {$mail->ErrorInfo}. </p>";
 }

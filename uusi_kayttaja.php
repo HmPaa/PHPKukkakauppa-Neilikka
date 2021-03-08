@@ -1,8 +1,10 @@
-<?php
-include("header.php");
-include("kayttajan_lisaaja.php");
+<?php include_once "header.php"; 
 ?>
+
     <h2>Intranet</h2>
+
+    <?php include("kayttajan_lisaaja.php");?>
+
     <p>Ongelmatilanteissa ota yhteyttä support@neilikka.fi.<br>
     <?php echo $success_msg; ?>
     <?php echo $email_exist; ?>
@@ -30,5 +32,5 @@ include("kayttajan_lisaaja.php");
     </form>
 
 <?php
-include("footer.html");
+include_once "footer.html";
 ?>

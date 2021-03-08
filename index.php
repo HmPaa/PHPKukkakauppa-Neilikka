@@ -1,6 +1,6 @@
 
 <?php
-include("header.php");
+include_once "header.php";
 ?>
     <h2>Tervetuloa Puutarhaliike Neilikan kotisivuille!</h2>
     <p>Meiltä löydät sekä sisä- että ulkokasvit ja kaiken tarvitsemasi kasvien hoitoon.</p>
@@ -24,7 +24,7 @@ include("header.php");
             <img src="puutarhatarvikkeet.jpg" alt="Puutarhatarvikkeita">
     </div>
     <?php
-include("footer.html");
+include_once "footer.html";
 ?>
 
 

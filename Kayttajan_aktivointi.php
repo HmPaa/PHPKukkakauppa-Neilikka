@@ -28,7 +28,7 @@
                        }
                   } else {
                         $email_already_verified = '<div>
-                               Sähköposti on jo vahvistettu!
+                               Sähköposti on jo vahvistettu.
                             </div>
                         ';
                   }
