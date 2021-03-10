@@ -1,7 +1,5 @@
+<?php include_once("suojaamaton_sivu.php");?>
 
-<?php
-include_once "header.php";
-?>
     <h2>Myymälät</h2>
 
     <h3>Puutarhaliike Neilikka, Helsinki</h3>

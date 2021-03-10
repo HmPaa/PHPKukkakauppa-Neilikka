@@ -1,5 +1,5 @@
 <?php
-include_once "header.php";
+include_once "suojaamaton_sivu.php";
 ?>
     <h2>Ota yhteyttä</h2>
     <ul class="yleinen">

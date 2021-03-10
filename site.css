@@ -198,6 +198,10 @@ label{
     width: 100%;
     color: #6d2f2f;
 }
+.checkbox input{
+  width:auto;
+}
+
 #tekstikentta{
  max-width: 80%;
  margin-bottom: 10px;

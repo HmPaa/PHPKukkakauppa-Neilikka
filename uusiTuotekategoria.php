@@ -1,5 +1,5 @@
-<?php 
-include_once "kulunvalvonta.php";
+<?php
+$suojattu_sivu=TRUE; 
 include_once "header.php";
 include_once "start.php";
 ?>

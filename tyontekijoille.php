@@ -1,5 +1,4 @@
-<?php
-include_once "header.php";
+<?php include_once("suojaamaton_sivu.php");
 include_once "kirjautuja.php";
 ?>
     <h2>Intranet</h2>
@@ -18,6 +17,9 @@ include_once "kirjautuja.php";
             <input type="text" id="nimi" name="nimi" pattern="[AZÄÖ-azäö]" minlenght=2 required>
             <label for="salasana">Salasana:</label>
             <input type="password" id="salasana" name="salasana" required><br>
+            <span class="checkbox"> 
+                <label for="muista_minut"><span>Muista minut</span><input type="checkbox" name="muista_minut"></label>
+            </span>
             <input id="submit" type="submit" value="Kirjaudu sisään" name="login">
         </fieldset>
     </form>

@@ -1,5 +1,4 @@
-<?php include_once "header.php"; 
-?>
+<?php include_once("suojaamaton_sivu.php");?>
 
     <h2>Intranet</h2>
 

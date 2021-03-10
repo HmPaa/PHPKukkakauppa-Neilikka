@@ -1,6 +1,5 @@
 
-<?php
-include_once "header.php";
+<?php include_once("suojaamaton_sivu.php");
 include_once "start.php";
 $kategoria=$_GET["tuotekategoria"];
 ?>

@@ -1,5 +1,5 @@
 <?php
-include_once "kulunvalvonta.php";
+
 if(isset($_POST["submit"])){
 $target_dir = 'kuvat/';
 $target_file = $target_dir . basename($_FILES['kuva']['name']);
