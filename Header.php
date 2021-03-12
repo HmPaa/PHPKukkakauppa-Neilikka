@@ -20,6 +20,32 @@ $valittu = "class=\"valittu\"";
 
 </head>
 
+<?php
+if($suojattu_sivu){
+?>
+<body>
+<header>
+        <h1>Kukkatalo Neilikka</h1>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="index.php">Koti</a>
+        <a <?php if ($osoite == "Tuotteet") echo $valittu;?> href="Tuotteet.php">Tuotteet</a>
+        <a <?php if ($osoite == "Myymalat") echo $valittu;?> href="Myymalat.php">Myymälät</a>
+        <a <?php if ($osoite == "Tietoameista") echo $valittu;?> href="Tietoameista.php">Tietoa meistä</a>
+        <a <?php if ($osoite == "yhteystiedot") echo $valittu;?> href="yhteystiedot.php">Ota yhteyttä</a>
+        <a id="tyontekijoille"<?php if ($osoite == "tyontekijoille") echo $valittu;?> href="dashboard.php">Käyttäjätiedot</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    </header>
+    <body>
+    <div class="content">    
+<?php 
+include_once("kulunvalvonta.php");
+} else {?>
+
+
 <body>
 <header>
         <h1>Kukkatalo Neilikka</h1>
@@ -38,3 +64,4 @@ $valittu = "class=\"valittu\"";
     </header>
     <body>
     <div class="content">
+    <?php } ?>

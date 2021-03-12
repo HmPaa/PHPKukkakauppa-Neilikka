@@ -1,7 +1,5 @@
+<?php include_once("suojaamaton_sivu.php");?>
 
-<?php
-include("header.php");
-?>
     <h2>Myymälät</h2>
 
     <h3>Puutarhaliike Neilikka, Helsinki</h3>
@@ -26,5 +24,5 @@ include("header.php");
     </p>
 
 <?php
-include("footer.html");
+include_once "footer.html";
 ?>

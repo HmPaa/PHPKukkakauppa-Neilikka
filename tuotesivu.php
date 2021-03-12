@@ -1,7 +1,6 @@
 
-<?php
-include("header.php");
-include("start.php");
+<?php include_once("suojaamaton_sivu.php");
+include_once "start.php";
 $kategoria=$_GET["tuotekategoria"];
 ?>
 <h2><?php echo $kategoria;?></h2>    
@@ -49,4 +48,4 @@ echo "</div>";
 </ul>
 </nav>
 <?php $yhteys->close();?>
-<?php include("footer.html");?>
+<?php include_once "footer.html";?>

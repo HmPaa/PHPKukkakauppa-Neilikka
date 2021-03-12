@@ -12,17 +12,20 @@ use PHPMailer\PHPMailer\SMTP;
 
 
 function posti($emailTo, $msg, $subject){
-   include("../tunnukset.php"); 
+
+   
    try {
+    include('../../../../tunnukset.php');    
                                     // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
     $mail = new PHPMailer(true);
+    $mail->CharSet = 'UTF-8';
     $mail->isSMTP(); 
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
+    $mail->SMTPDebug = 0;                      // Enable verbose debug output
                                             // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = '$sahkoposti';                     // SMTP username
-    $mail->Password   = '$tunnussana';                               // SMTP password
+    $mail->Username   = $sahkoposti;                     // SMTP username
+    $mail->Password   = $tunnussana;                               // SMTP password
     $mail->SMTPSecure = "PHPMailer::ENCRYPTION_STARTTLS";         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;
     //Recipients
@@ -39,14 +42,14 @@ function posti($emailTo, $msg, $subject){
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = '$subject';
-    $mail->Body    = '$msg';
+    $mail->Subject = $subject;
+    $mail->Body    = $msg;
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo "<p>Vahvistusviesti on lähetetty. </p>";
+    echo "<p>Sähköposti on lähetetty osoitteeseen ". $emailTo . ".</p>";
 } catch (Exception $e) {
-    echo "<p>Vahvistusviestiä ei voitu lähettää. Mailer Error: {$mail->ErrorInfo}. </p>";
+    echo "<p>Sähköpostia ei voitu lähettää. Mailer Error: {$mail->ErrorInfo}. </p>";
 }
 };
 ?>

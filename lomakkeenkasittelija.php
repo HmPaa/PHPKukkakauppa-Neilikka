@@ -1,5 +1,5 @@
-<?php include "header.php" ?>
-<?php include "start.php" ?>
+<?php include_once "header.php" ?>
+<?php include_once "start.php" ?>
 <div class="content"><?php
 if( isset($_POST["submit"]) ) {
     $nimi=$yhteys->real_escape_string(strip_tags($_POST["nimi"]));
@@ -19,5 +19,5 @@ if( isset($_POST["submit"]) ) {
 
 $yhteys->close();
 ?>
-<?php include "footer.html" ?>
+<?php include_once "footer.html" ?>
 

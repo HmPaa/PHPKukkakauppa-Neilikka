@@ -1,12 +1,19 @@
 <?php
    
     // Database connection
-    include('start.php');
-    include("maileri.php"); 
+    include_once 'start.php';
+        // Enable us to use Headers
+        ob_start();
+
+        // Set sessions
+        if(!isset($_SESSION)) {
+            session_start();
+        }
+    include_once 'maileri.php'; 
     
     // Error & success messages
-    global $success_msg, $email_exist, $f_NameErr, $l_NameErr, $_emailErr, $_mobileErr, $_passwordErr;
-    global $fNameEmptyErr, $lNameEmptyErr, $emailEmptyErr, $mobileEmptyErr, $passwordEmptyErr, $email_verify_err, $email_verify_success;
+    global $success_msg, $email_exist, $NameErr, $_emailErr, $_passwordErr;
+    global $NameEmptyErr, $emailEmptyErr, $passwordEmptyErr, $email_verify_err, $email_verify_success;
     
     // Set empty form vars for validation mapping
     $_kayttajatunnus = $_email = $_salasana = "";
@@ -36,7 +43,7 @@
                 $_salasana = mysqli_real_escape_string($yhteys, $salasana);
 
                 // perform validation
-                if(!preg_match("/[^\s]/", $_kayttajatunnus)) {
+                if(!preg_match("/^\S+$/", $_kayttajatunnus)) {
                     $f_NameErr = 'Käyttäjätunnus ei voi sisältää välilyöntejä. ';
                 }
                 if(!filter_var($_email, FILTER_VALIDATE_EMAIL)) {
@@ -70,7 +77,7 @@
                     // Send verification email
                     if($query) {
                         $msg = 'Vahvista sähköpostiosoitteesi allaolevasta linkistä. <br><br>
-                          <a href="http://localhost:8888/php-user-authentication/user_verificaiton.php?token='.$token.'"> Klikkaa tästä vahvistaaksesi sähköpostiosoitteesi. </a>
+                          <a href="http://localhost/moodle/PHPKukkakauppa%20Neilikka/kayttajan_verifiointi.php?token='.$token.'"> Klikkaa tästä vahvistaaksesi sähköpostiosoitteesi. </a>
                         ';
                         $emailTo=$email;
                         $subject='Kukkatalo Neilikan intranetin uusi käyttäjätunnus';

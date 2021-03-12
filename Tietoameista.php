@@ -1,7 +1,4 @@
-
-<?php
-include("header.php");
-?>
+<?php include_once("suojaamaton_sivu.php");?>
     <h2>Tietoa meistä</h2>
     <p>
         Puutarhaliike Neilikka on vuonna 1990 perustettu puutarhanhoitoon ja huonekasveihin erikoistunut myymäläketju.
@@ -13,6 +10,6 @@ include("header.php");
         juuri sinulle sopivimmat tuotteet.
     </p>
 <?php
-include("footer.html");
+include_once "footer.html";
 ?>
 

@@ -1,6 +1,7 @@
-<?php 
-include "header.php";
-include "start.php";
+<?php
+$suojattu_sivu=TRUE; 
+include_once "header.php";
+include_once "start.php";
 ?>
 <h2>Uuden tuotekategorian lisäys</h2>    
 <fieldset class="lomake">    
@@ -12,5 +13,5 @@ autofocus required title="Aloitathan isolla kirjaimella." minlenght=2 required>
 </form>
 </fieldset>
 <?php
-include "footer.html";
+include_once "footer.html";
 ?>

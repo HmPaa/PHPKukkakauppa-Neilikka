@@ -20,7 +20,7 @@
   text-align:center;
 }
 div.content{
-  background-color: #f8dcdc;
+  background-color: #f8dcdce1;
   padding-bottom: 25vh;
   min-height: 60vh;
   text-align: center;
@@ -198,6 +198,10 @@ label{
     width: 100%;
     color: #6d2f2f;
 }
+.checkbox input{
+  width:auto;
+}
+
 #tekstikentta{
  max-width: 80%;
  margin-bottom: 10px;
